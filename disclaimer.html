@@ -134,9 +134,40 @@
         footer {
             background: #2c3e50;
             color: #ecf0f1;
-            padding: 30px 10%;
+            padding: 60px 10% 30px;
             margin-top: 60px;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+
+        .footer-col h3 {
+            color: #fff;
+            margin-bottom: 20px;
+            position: relative;
+        }
+
+        .footer-col ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .footer-col ul li a {
+            color: #bdc3c7;
+            text-decoration: none;
+        }
+
+        .disclaimer-box {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 20px;
+            font-size: 0.85rem;
             text-align: center;
+            border-radius: 8px;
+            border: 1px dashed #7f8c8d;
         }
 
         /* --- Responsive --- */
@@ -220,9 +251,39 @@
     </div>
 
     <footer>
-        <p>&copy; 2026 CG Janbhagidari Ration Card | यह एक गैर-सरकारी सूचना वेबसाइट है।</p>
-        <p style="margin-top: 10px;">
-            <a href="index.html" style="color: #bdc3c7; text-decoration: none;">होम पर जाएं</a> |
+        <div class="footer-grid">
+            <div class="footer-col">
+                <h3>हमारे बारे में</h3>
+                <p>यह पोर्टल छत्तीसगढ़ के नागरिकों को खाद्य विभाग और राशन कार्ड से जुड़ी जानकारी सरल भाषा में उपलब्ध
+                    कराने के लिए बनाया गया है।</p>
+            </div>
+            <div class="footer-col">
+                <h3>Important Links </h3>
+                <ul>
+                    <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                    <li><a href="disclaimer.html">Disclaimer</a></li>
+                    <li><a href="#">Terms & Conditions</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>अधिकारिक वेबसाइट</h3>
+                <ul>
+                    <li><a href="https://fcs.cg.gov.in" target="_blank">fcs.cg.gov.in</a></li>
+                    <li><a href="https://khadya.cg.nic.in" target="_blank">khadya.cg.nic.in</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="disclaimer-box">
+            <strong>अस्वीकरण (Disclaimer):</strong> यह वेबसाइट एक सूचनात्मक ब्लॉग है और इसका किसी भी सरकारी संगठन से
+            सीधा संबंध नहीं है। सटीक और आधिकारिक जानकारी के लिए कृपया शासन की वेबसाइट fcs.cg.gov.in पर विजिट करें।
+        </div>
+
+        <p style="text-align: center; margin-top: 30px; font-size: 0.85rem; color: #95a5a6;">
+            © 2026 Copyright | support@khadyacg.in | जनभागीदारी छत्तीसगढ़
+        </p>
+        <p style="text-align: center; margin-top: 10px;">
+            <a href="index.html" style="color: #bdc3c7; text-decoration: none;">होम</a> |
             <a href="disclaimer.html" style="color: #bdc3c7; text-decoration: none;">डिस्क्लेमर</a> |
             <a href="privacy-policy.html" style="color: #bdc3c7; text-decoration: none;">Privacy Policy</a>
         </p>
